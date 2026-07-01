@@ -4,7 +4,9 @@
 // Usage in the React artifact: replace localStorage-based state and direct
 // AI-provider fetch() calls with these functions instead.
 
-const API_BASE = "http://localhost:8000/api";
+const API_BASE =
+  import.meta.env.VITE_API_URL ||
+  "https://linkedin-ai-production-b75d.up.railway.app/api";
 
 function getToken() {
   return window.__lp_token || null;
