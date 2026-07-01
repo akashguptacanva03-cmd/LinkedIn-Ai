@@ -31,7 +31,7 @@ const AI_PROVIDERS = [
 ];
 
 // ── API CLIENT ────────────────────────────────────────────────────────────────
-const API = "http://localhost:8000/api";
+const API = "https://linkedin-ai-production-b75d.up.railway.app/api";
 
 async function api(method, path, body, token) {
   const headers = { "Content-Type": "application/json" };
